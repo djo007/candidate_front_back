@@ -1,0 +1,42 @@
+
+
+<p>
+  candidates
+</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">firstname</th>
+    <th scope="col">lastname</th>
+    <th scope="col">age</th>
+    <th scope="col">password</th>
+    <th scope="col">email</th>
+    <th scope="col">sick</th>
+    <th scope="col">finance</th>
+    <th scope="col">social_stat</th>
+    <th scope="col">sport</th>
+    <th scope="col">sociable</th>
+    <th scope="col">hobies</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="candidates">
+  <tr  *ngFor="let c of candidates._embedded.candidates">
+    <td>{{c.firstname}}</td>
+    <td>{{c.lastname}}</td>
+    <td>{{c.age}}</td>
+    <td>{{c.password}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.sick}}</td>
+    <td>{{c.finance}}</td>
+    <td>{{c.social_stat}}</td>
+    <td>{{c.sport}}</td>
+    <td>{{c.sociable}}</td>
+    <td>{{c.hobies}}</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+
+
